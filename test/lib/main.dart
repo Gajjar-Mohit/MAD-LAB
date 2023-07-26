@@ -23,7 +23,9 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  TextEditingController controller = TextEditingController();
   String name = "";
+  int counter = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,11 +40,8 @@ class _HomeState extends State<Home> {
               height: 20,
             ),
             TextField(
-              onChanged: (val) {
-                setState(() {
-                  name = val;
-                });
-              },
+              controller: controller,
+              onChanged: (val) {},
               decoration: const InputDecoration(
                   hintText: "mohit",
                   label: Text("Enter name"),
@@ -56,6 +55,20 @@ class _HomeState extends State<Home> {
               name,
               style: const TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
             ),
+            OutlinedButton(
+                onPressed: () {
+                  setState(() {
+                    name = controller.text;
+                  });
+                },
+                child: const Text("Get text")),
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    counter++;
+                  });
+                },
+                child: Text(counter.toString()))
           ],
         ),
       ),
