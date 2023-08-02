@@ -68,7 +68,7 @@ class _HomeState extends State<Home> {
                     counter++;
                   });
                 },
-                child: Text(counter.toString()))
+                child: Text(counter.toString())),
           ],
         ),
       ),
