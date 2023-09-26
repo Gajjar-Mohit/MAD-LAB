@@ -12,9 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*val text : TextView = findViewById(R.id.newtext)
-        text.text = Datasource().loadAffirmations().size.toString()*/
-
         val myDataset = Datasource().loadAffirmations()
 
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
