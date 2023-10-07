@@ -14,13 +14,11 @@ class _HomeState extends State<Home> {
   String text = "";
   ApiInterface apiInterface = ApiInterface();
   TextEditingController textEditingController = TextEditingController();
-  void getData()async {
+  void getData() async {
     setState(() {
       isLoading = true;
     });
-   await apiInterface.getData(textEditingController.text).then((value) {
-      print(value[0]['summary_text']);
-
+    await apiInterface.getData(textEditingController.text).then((value) {
       setState(() {
         text = value[0]['summary_text'];
         isLoading = false;
@@ -59,7 +57,7 @@ class _HomeState extends State<Home> {
                     const SizedBox(
                       height: 20,
                     ),
-                    Text(text)
+                    Text(text, style: const TextStyle(fontSize: 20),)
                   ],
                 ),
               ),

@@ -12,8 +12,8 @@ class ApiInterface {
       'Authorization': 'Bearer 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'
     });
     var res = json.decode(response.body);
+    print(res);
     if (response.statusCode == 200) {
-      print('Response status: ${response.statusCode}');
       return res;
     } else {
       return "";
