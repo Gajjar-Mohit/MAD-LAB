@@ -56,8 +56,8 @@ class _HomePageState extends State<HomePage> {
             'https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlYWNoZXJzJTIwcHJvZmlsZSUyMHBpY3R1cmVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
         designation: 'Geography'),
   ];
-  
-List<Student> fifthGradeStudents = [
+
+  List<Student> fifthGradeStudents = [
     Student(
         id: '5A01',
         name: 'John Doe',
