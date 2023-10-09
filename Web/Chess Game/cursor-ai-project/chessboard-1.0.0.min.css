@@ -1,0 +1,237 @@
+/* Chessboard CSS */
+.chessboard {
+  border: 2px solid #333;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 400px;
+}
+
+.chessboard-orientation-black .chessboard-63e37 {
+  transform: rotate(180deg);
+}
+
+.chessboard-63e37 {
+  background-color: #b58863;
+  background-image: linear-gradient(to bottom, #d8bda7 0%, #b58863 100%);
+  background-size: 100% 100%;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 400px;
+}
+
+.chessboard-63e37:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.chessboard-63e37 > div {
+  background-color: transparent;
+  background-image: none;
+  float: left;
+  height: 12.5%;
+  position: relative;
+  width: 12.5%;
+}
+
+.chessboard-63e37 > div:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.chessboard-63e37 > div > div {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.chessboard-63e37 > div > div:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.chessboard-63e37 > div > div > div {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 50%;
+  height: 60%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.chessboard-63e37 > div > div > div:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.chessboard-63e37 > div > div > div > span {
+  display: none;
+}
+
+.chessboard-63e37 > div > div > div > img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.chessboard-63e37 > div > div > div > svg {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.chessboard-63e37 > div > div > div > .spare-piece {
+  display: none;
+}
+
+.chessboard-63e37 > div > div > div > .ghost {
+  opacity: 0.6;
+}
+
+.chessboard-63e37 > div > div > div > .highlight1 {
+  background-color: rgba(255, 255, 0, 0.3);
+}
+
+.chessboard-63e37 > div > div > div > .highlight2 {
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.chessboard-63e37 > div > div > div > .move-dest {
+  background-color: rgba(0, 255, 0, 0.3);
+}
+
+.chessboard-63e37 > div > div > div > .move-src {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63 {
+  background-color: #f0d9b5;
+  background-image: linear-gradient(to bottom, #f0d9b5 0%, #b58863 100%);
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.white {
+  background-color: #f0d9b5;
+  background-image: linear-gradient(to bottom, #f0d9b5 0%, #b58863 100%);
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.white:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.black {
+  background-color: #b58863;
+  background-image: linear-gradient(to bottom, #d8bda7 0%, #b58863 100%);
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.black:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-hover {
+  background-color: #ff4500;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-dragging {
+  opacity: 0.5;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-dragging.ui-droppable-hover {
+  background-color: #ff4500;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-dragging.ui-droppable {
+  background-color: #ff4500;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable {
+  background-color: #ff7f50;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-hover {
+  background-color: #ff4500;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-active {
+  background-color: #ff7f50;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-active.ui-droppable-hover {
+  background-color: #ff4500;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-disabled {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-disabled.ui-droppable-hover {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-disabled.ui-droppable-active {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-droppable-disabled.ui-droppable-active.ui-droppable-hover {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled {
+  opacity: 0.5;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-droppable-hover {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-droppable-active {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-droppable-active.ui-droppable-hover {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-draggable-dragging {
+  opacity: 0.5;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-draggable-dragging.ui-droppable-hover {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-draggable-dragging.ui-droppable-active {
+  background-color: #ccc;
+}
+
+.chessboard-63e37 > div > div > div > .square-55d63.ui-draggable-disabled.ui-draggable-dragging.ui-droppable-active.ui-droppable-hover {
+  background-color: #ccc;
+}
